@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lilimoni - Inventario familiar</title>
+    <meta
+      name="description"
+      content="Inventario familiar y catalogo cuidado para vender objetos seleccionados."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Lilimoni">
+        <span class="brand-mark">L</span>
+        <span>Lilimoni</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#catalogo">Catalogo</a>
+        <a href="#inventario">Inventario</a>
+        <a href="#admin">Admin</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Inventario familiar</p>
+        <h1 id="hero-title">Objetos con historia, listos para su proxima casa</h1>
+        <p class="intro">
+          Primero mama y tia deciden que se queda en la familia. Despues, lo disponible
+          se publica como un catalogo elegante para compartir por WhatsApp.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#admin">Cargar producto</a>
+          <a class="button" href="#catalogo">Ver catalogo</a>
+        </div>
+      </section>
+
+      <section class="process" id="inventario" aria-label="Flujo de trabajo">
+        <article>
+          <strong>1</strong>
+          <h2>Cargar</h2>
+          <p>Foto, descripcion, precio sugerido, estado y notas.</p>
+        </article>
+        <article>
+          <strong>2</strong>
+          <h2>Decidir</h2>
+          <p>Mama y tia tienen hasta 14 dias para marcar si lo quieren.</p>
+        </article>
+        <article>
+          <strong>3</strong>
+          <h2>Compartir</h2>
+          <p>Lo no reservado aparece en un catalogo publico con enlace por producto.</p>
+        </article>
+      </section>
+
+      <section class="catalog" id="catalogo" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <p class="eyebrow">Catalogo publico</p>
+          <h2 id="catalog-title">Vista de muestra para WhatsApp</h2>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-photo photo-one" role="img" aria-label="Cafetera de aluminio"></div>
+            <div class="ornament" aria-hidden="true"><span></span><b></b><span></span></div>
+            <h3>Cafetera de aluminio</h3>
+            <p class="price">25 EUR</p>
+            <p>Buen estado. Cuerpo metalico con mango negro. Ideal para cocina vintage.</p>
+            <button class="share-button" type="button" data-product="Cafetera de aluminio">
+              Compartir producto
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-photo photo-two" role="img" aria-label="Juego de plata"></div>
+            <div class="ornament" aria-hidden="true"><span></span><b></b><span></span></div>
+            <h3>Juego de plata</h3>
+            <p class="price">Consultar</p>
+            <p>Piezas clasicas para mesa. Pendiente de revisar estado final y precio.</p>
+            <button class="share-button" type="button" data-product="Juego de plata">
+              Compartir producto
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-photo photo-three" role="img" aria-label="Maquina de coser antigua"></div>
+            <div class="ornament" aria-hidden="true"><span></span><b></b><span></span></div>
+            <h3>Maquina de coser</h3>
+            <p class="price">60 EUR</p>
+            <p>Objeto decorativo con presencia. Para comprador que valore piezas antiguas.</p>
+            <button class="share-button" type="button" data-product="Maquina de coser">
+              Compartir producto
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="admin-preview" id="admin" aria-labelledby="admin-title">
+        <div>
+          <p class="eyebrow">Panel privado</p>
+          <h2 id="admin-title">Lo siguiente: Google login, D1 y fotos</h2>
+          <p>
+            Esta primera version arregla el build y deja marcada la estructura visual.
+            El panel real ira protegido por Google con Cloudflare Access.
+          </p>
+        </div>
+        <dl>
+          <div>
+            <dt>Estado familiar</dt>
+            <dd>Mama / Tia / Ambas / Ninguna</dd>
+          </div>
+          <div>
+            <dt>Plazo</dt>
+            <dd>Maximo 14 dias</dd>
+          </div>
+          <div>
+            <dt>Venta</dt>
+            <dd>Catalogo y enlace por producto</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <span>Lilimoni</span>
+      <span>Inventario familiar para ordenar, decidir y vender con calma.</span>
+    </footer>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
